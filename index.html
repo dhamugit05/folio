@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhamotharan Samy - 3D Portfolio</title>
+    <meta name="description" content="Production-ready 3D portfolio of Dhamotharan Samy, Entry-Level Software Developer specializing in Python, Django REST Framework, React, TypeScript, and SQL." />
+    <meta property="og:title" content="Dhamotharan Samy - 3D Portfolio" />
+    <meta property="og:description" content="Production-ready 3D portfolio of Dhamotharan Samy, Entry-Level Software Developer specializing in Python, Django REST Framework, React, TypeScript, and SQL." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- JSON-LD Structured Data for Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dhamotharan Samy",
+      "jobTitle": "Entry-Level Software Developer",
+      "email": "mailto:dhamotharanpers@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chennai",
+        "addressCountry": "India"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Manonmaniyam Sundaranar University"
+      },
+      "knowsAbout": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "SQL",
+        "Tailwind CSS",
+        "Three.js"
+      ],
+      "sameAs": [
+        "https://github.com/dhamugit05",
+        "https://www.linkedin.com/in/dhamotharansamy-"
+      ]
+    }
+    </script>
+
+    <!-- Theme inline script to prevent flash of unstyled theme -->
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('portfolio-theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && systemPrefersDark) || !storedTheme) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F7F8FC] dark:bg-[#05060A] text-slate-900 dark:text-slate-100 selection:bg-cyan-400 selection:text-black overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

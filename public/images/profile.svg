@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+    <linearGradient id="neonRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="50%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="400" height="480" fill="url(#avatarBg)" rx="24" />
+
+  <!-- Geometric Grid Accent -->
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#22D3EE" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.4" />
+  <circle cx="200" cy="200" r="100" fill="none" stroke="#818CF8" stroke-width="1.5" opacity="0.3" />
+
+  <!-- Avatar Silhouette / Emblem -->
+  <circle cx="200" cy="170" r="65" fill="#0A0F1D" stroke="url(#neonRing)" stroke-width="3" filter="url(#glow)" />
+  <path d="M 120 340 C 120 270, 280 270, 280 340 Z" fill="#0A0F1D" stroke="url(#neonRing)" stroke-width="2.5" />
+
+  <!-- DS Initials in center of avatar circle -->
+  <text x="200" y="185" font-family="'Space Grotesk', sans-serif" font-weight="bold" font-size="44" fill="#22D3EE" text-anchor="middle" letter-spacing="2">DS</text>
+
+  <!-- Name & Badge -->
+  <text x="200" y="385" font-family="'Space Grotesk', sans-serif" font-weight="bold" font-size="20" fill="#FFFFFF" text-anchor="middle">Dhamotharan Samy</text>
+  <text x="200" y="415" font-family="'JetBrains Mono', monospace" font-size="13" fill="#22D3EE" text-anchor="middle">Full Stack / Frontend Developer</text>
+  <text x="200" y="440" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8" text-anchor="middle">Chennai, India • BCA 2026</text>
+</svg>
